@@ -1,0 +1,219 @@
+/* USHUAIA */
+.ushuaia_style{
+    height: 100vh;
+    width: $full-width;
+    background-image: url(../imagenes/juan-pablo-mascanfroni-hNdDLuLgz-I-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    div{
+        text-align: center;
+        color: map-get($fondo,secundario);
+    }
+    section{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            li{
+                img{
+                    animation-name: efectos;
+                    animation-iteration-count: 2;
+                    animation-timing-function: linear;
+                    animation-duration: 10s;
+                    @include medidas(400px,300px);
+                }
+            }
+        }
+    }
+}
+
+/*MOVIL USHUAIA*/
+@media (min-width:320px) and (max-width:576px)
+{
+    body{
+        height: $full-height;
+    
+    .ushuaia_style{
+        height: $full-height;
+        width: $full-width;
+        background-image: url(../imagenes/juan-pablo-mascanfroni-hNdDLuLgz-I-unsplash\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        div{
+            text-align: center;
+            color:map-get($fondo,secundario);
+        }
+        section{
+            ul{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2,1fr);
+                list-style: none;
+                justify-items: center;
+                padding: 10px;
+                margin-bottom:0;
+                li{
+                    img{
+                        margin-top: 30px;
+                        animation-name: efectos;
+                        animation-iteration-count: 0;
+                        @include medidas(320px,320px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+}
+
+
+
+/* PUERTO IGUAZU */
+.iguazu_style{
+    height: $full-height;
+    width: $full-width;
+    background-image: url(../imagenes/puertoigua2\ \(1\).webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    div{
+        text-align: center;
+        color: map-get($fondo,secundario);
+    }
+    section{
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            margin-top: 20px;
+            li{
+                img{
+                    animation-name: efectos;
+                    animation-iteration-count: 2;
+                    animation-timing-function: linear;
+                    animation-duration: 10s;
+                    @include medidas(400px,300px);
+                }
+            }
+            
+        }
+    }
+}
+/*MOVIL IGUAZU*/
+@media (min-width:320px) and (max-width:576px)
+{
+    body{
+        height: $full-height;
+    
+    .iguazu_style{
+        height: $full-height;
+        width: $full-width;
+        background-image: url(../imagenes/iguazumovil\ \(1\).webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        div{
+            text-align: center;
+            color:map-get($fondo,secundario)
+        }
+        section{
+            div{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2,1fr);
+                list-style: none;
+                justify-items: center;
+                padding: 10px;
+                margin-bottom:0;
+                li{
+                    img{
+                        margin-top: 30px;
+                        animation-name: efectos;
+                        animation-iteration-count: 0;
+                        @include medidas(320px,320px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+}
+
+/* CORDOBA */
+.cordoba_style{
+    height: $full-height;
+    width: $full-width;
+    background-image: url(../../imagenes/rincon-cascada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    div{
+        text-align: center;
+        color: map-get($fondo,secundario);
+    }
+    section{
+        div{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            margin-top: 20px;
+            li{
+                
+                img{
+                animation-name: efectos;
+                animation-iteration-count: 2;
+                animation-timing-function: linear;
+                animation-duration: 10s;
+                @include medidas(400px,300px);
+                }
+            }
+        }
+    }
+}
+
+/*MOVIL CORDOBA */
+@media (min-width:320px) and (max-width:576px)
+{
+    body{
+        height: $full-height;
+    
+    .cordoba_style{
+        height: $full-height;
+        width: $full-width;
+        background-image: url(../../imagenes/rincon-cascada.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        div{
+            text-align: center;
+            color:map-get($fondo,secundario);
+        }
+        section{
+            div{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2,1fr);
+                list-style: none;
+                justify-items: center;
+                padding: 10px;
+                margin-bottom:0;
+                li{
+                    img{
+                        margin-top: 30px;
+                        animation-name: efectos;
+                        animation-iteration-count: 0;
+                        @include medidas(320px,320px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+}
+
+

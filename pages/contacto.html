@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Turismo Sin Fronteras</title>
+        <title>Contacto</title>
+        <meta name="description" content=" Contactanos.">
         <link rel="shortcut icon" href="../imagenes/mundo icono.png">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <script src="../js/bootstrap.bundle.min.js"></script>
@@ -12,7 +13,7 @@
     </head>
     <body>
         <!-- Cabecera -->
-        <header class="bg-primary">
+        <header class="bg-dark bg-opacity-60">
             <!-- Logo -->
             <div class="container">
                 <div class="row">
@@ -37,7 +38,7 @@
                                 id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active"
+                                        <a class="nav-link"
                                             aria-current="page"
                                             href="../pages/destinos.html">Destinos</a>
                                     </li>
@@ -62,40 +63,38 @@
         </header>
 
         <main class="contacto">
-            <h1 class="titulo_contacto">CONTACTO</h1>
+            <h1>CONTACTO</h1>
             <div class="formulario1">
-                <div class="mensajes">
+                <div class="mensaje">
                     <h2>Envianos tu mensaje</h2>
                     <p">Dejanos tu mensaje para asesorarte y darte una mejor
                         experiencia.</p>
-                </div>
-                <div class="formulario">
-                    <form action>
+                    <form action="" class="formulario">
                         <div>
                             <label for="nombre">Nombre y Apellido</label><br>
-                            <input type="tex" name="nombre">
+                            <input type="tex" name="nombre" placeholder="Ingrese su nombre:" required>
                         </div>
 
                         <div>
                             <label for="correo">Email</label><br>
-                            <input type="email" name="correo">
+                            <input type="email" name="correo" placeholder="xxxx@ejemplo.com" required>
                         </div>
                         <div>
                             <label for="tlf">Numero de telefono</label><br>
-                            <input type="tel" name="tlf">
+                            <input type="tel" name="tlf" placeholder="(Cod)+0000000" required>
                         </div>
                         <div>
                             <label for="pais">Pais de Residencia</label><br>
-                            <input type="tex" name="pais">
+                            <input type="tex" name="pais" placeholder="Pais:" required>
                         </div>
                         <label for="mensaje">Mensaje</label><br>
-                        <textarea name="mensaje" id cols="30" rows="10"></textarea> <br>
+                        <textarea name="mensaje" id cols="35" rows="7" placeholder="Ingrese el mensaje que desea enviar:" required></textarea> <br>
                         <button type="submit">Enviar</button>
                     </div>
                 </div>
             </div>
-
-        </main>
+        </form>
+</main>
 
         <footer class="footer"> <!-- Navegacion de footer-->
             <nav class="footer footer-expand-lg bg-dark">

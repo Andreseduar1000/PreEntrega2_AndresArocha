@@ -1,0 +1,72 @@
+/* Pagina destinos */
+.main{
+    height: 100vh;
+    width: $full-width;
+    background-image: url(../imagenes/fondodestinogrande2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    .destinos_h1{
+        background-color: map-get($fondo,terciario);
+        margin: 0;
+        clip-path: inset(50%);
+        z-index: -1;
+    }
+    section{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 0px;
+        justify-items: center;
+        align-items: center;
+        #ushuaiaimagen{
+            @include medidas(200px,280px);  
+        }
+        
+        .texto_destinos{
+            text-align: center;
+            color:map-get($fondo,secundario);
+            font-size: 30px;
+            margin: -180px 0 180px 0;
+            
+        }
+        .zoom_destinos1:hover{
+            @extend .extend-zoom;
+        }
+        .zoom_destinos2:hover{
+            @extend .extend-zoom;
+        }
+        .zoom_destinos3:hover{
+            @extend .extend-zoom;
+        
+    }
+}
+}
+
+/* MOVIL DESTINO */
+@media (min-width:320px) and (max-width:576px){
+
+    .main{
+        height: auto;
+        section{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-auto-rows: repeat (3,1fr);
+            justify-items: center;
+            padding:0;
+            
+        }
+    }
+
+    footer{
+        margin:0;
+        display: flex;
+        nav{
+            ul{
+                justify-content: center;
+            }
+        }
+    }
+}

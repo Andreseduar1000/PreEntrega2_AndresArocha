@@ -1,0 +1,29 @@
+/* NOSOTROS */
+
+.text_nosotros{
+    text-align: center;
+    background-color: map-get($fondo,primario);
+    color: map-get($fondo,secundario);
+}
+/* MOVIL NOSOTROS */
+@media (min-width:320px) and (max-width:576px){
+    .body_nosotros{
+    .text_nosotros{
+        display: grid;
+        grid-area:
+        "header"
+        "main"
+        "footer";
+        justify-content: center;
+        background-color:map-get($fondo,primario);
+        color: map-get($fondo,secundario);
+        height: 100%;
+        section{
+            img{
+                width: 320px;
+
+            }
+        }
+    }
+}
+}

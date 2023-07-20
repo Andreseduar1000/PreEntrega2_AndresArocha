@@ -1,0 +1,32 @@
+/* AVENTURAS */
+
+.aventuras{
+    .aventuras_h1{
+        background-color: map-get($fondo,terciario);
+        margin: 0;
+        clip-path: inset(50%);
+        z-index: -1;
+    }
+    .margin_div{
+        margin: -40px 0px 0px 0px;
+    }
+    background-color:map-get($fondo,primario);
+    text-align: center;
+    color: map-get($fondo,secundario);
+    .tex_aventuras{
+        text-align: left;
+    }
+}
+
+/* MOVIL AVENTURAS */
+@media (min-width:320px) and (max-width:576px){
+    .aventuras{
+        background-color: map-get($fondo,primario);
+        text-align: center;
+        color:map-get($fondo,secundario);
+    }
+    iframe{
+        width: auto;
+    }
+
+}
