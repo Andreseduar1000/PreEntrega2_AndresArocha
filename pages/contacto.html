@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
         <meta name="description" content=" Contactanos.">
-        <link rel="shortcut icon" href="../imagenes/mundo icono.png">
+        <link rel="shortcut icon" href="../imagenes/mundo icono.webp">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <script src="../js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body>
+    <body >
         <!-- Cabecera -->
         <header class="bg-dark bg-opacity-60">
             <!-- Logo -->
@@ -21,7 +21,7 @@
                         <nav class="navbar navbar-expand-lg ">
                             <div class="container-fluid">
                                 <a class="navbar-brand" href="../index.html"><img
-                                        src="../imagenes/mundo icono.png"
+                                        src="../imagenes/mundo icono.webp"
                                         alt="Mundo Viajante">Turismo Sin
                                     Fronteras</a>
                                 <button class="navbar-toggler" type="button"
@@ -37,10 +37,24 @@
                             <div class="collapse navbar-collapse"
                                 id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link"
-                                            aria-current="page"
-                                            href="../pages/destinos.html">Destinos</a>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle"
+                                            href="../pages/destinos.html"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            onclick="toggleActiveClass(this)">
+                                            Destinos
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="../pages/subpages/ushuaia.html">Ushuaia</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="../pages/subpages/iguazu.html">Puerto
+                                                    Iguazu</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="../pages/subpages/cordoba.html">Cordoba</a></li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link"
@@ -64,47 +78,54 @@
 
         <main class="contacto">
             <h1>CONTACTO</h1>
-            <div class="formulario1">
-                <div class="mensaje">
+                <div class="mensaje container">
                     <h2>Envianos tu mensaje</h2>
-                    <p">Dejanos tu mensaje para asesorarte y darte una mejor
-                        experiencia.</p>
+                    <p">¡Nos encantaría saber de ti! No dudes en ponerte en contacto con nosotros para cualquier consulta, comentario o colaboración. Estamos aquí para atenderte y hacer de tu experiencia con nosotros algo excepcional. ¡Esperamos recibir noticias tuyas pronto!</p>
+                    <div class="redes">
+                        <h2>Redes Sociales</h2>
+                        <div class="redes_img">
+                        <a href=""><img src="../imagenes/ing.png" alt=" logo de instagram"></a>
+                        <a href=""><img src="../imagenes/face.png" alt=" logo de facebook"></a>
+                        <a href=""><img src="../imagenes/whatsapp.png" alt="Logo de whatsapp"></a>
+                    </div>
+                    </div>
+                </div>
+                <section class="container">
                     <form action="" class="formulario">
-                        <div>
+                        <div>   
                             <label for="nombre">Nombre y Apellido</label><br>
                             <input type="tex" name="nombre" placeholder="Ingrese su nombre:" required>
                         </div>
 
                         <div>
                             <label for="correo">Email</label><br>
-                            <input type="email" name="correo" placeholder="xxxx@ejemplo.com" required>
+                            <input type="email" name="correo" placeholder="Ingrese su email:" required>
                         </div>
                         <div>
                             <label for="tlf">Numero de telefono</label><br>
-                            <input type="tel" name="tlf" placeholder="(Cod)+0000000" required>
+                            <input type="tel" name="Telefono" placeholder="Ingrese su telefono:" required>
                         </div>
                         <div>
                             <label for="pais">Pais de Residencia</label><br>
-                            <input type="tex" name="pais" placeholder="Pais:" required>
+                            <input type="tex" name="pais" placeholder="Ingrese su pais:" required>
                         </div>
                         <label for="mensaje">Mensaje</label><br>
                         <textarea name="mensaje" id cols="35" rows="7" placeholder="Ingrese el mensaje que desea enviar:" required></textarea> <br>
                         <button type="submit">Enviar</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-</main>
+                    </form>
+                </section>
+            </main>
 
         <footer class="footer"> <!-- Navegacion de footer-->
-            <nav class="footer footer-expand-lg bg-dark">
+            <nav class="footer footer-expand-lg">
                 <ul class="container-fluid">
                     <li class="redes1"><a href><img
-                                src="../imagenes/ig3.png"
+                                src="../imagenes/ig3.webp"
                                 alt="instagram"></a></li>
                     <li class="redes2"><a href><img
-                                src="../imagenes/face3.png"
+                                src="../imagenes/face3.webp"
                                 alt="facebook"></a></li>
+                    <li class="redes3"><a href=""><img src="../imagenes/ws.png" alt="logo de whatsapp"></a></li>
                 </ul>
                 <div class="contacto2"><a href="../pages/contacto.html">Contacto</a></div>
             </nav>

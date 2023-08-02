@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Puerto Iguazu</title>
         <meta name="description" content=" Descubre Puerto Iguazu">
-        <link rel="shortcut icon" href="../../imagenes/mundo icono.png">
+        <link rel="shortcut icon" href="../../imagenes/mundo icono.webp">
         <link rel="stylesheet" href="../../css/bootstrap.min.css">
         <script src="../../js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="../../css/style.css">
@@ -21,7 +21,7 @@
                         <nav class="navbar navbar-expand-lg ">
                             <div class="container-fluid">
                                 <a class="navbar-brand" href="../../index.html"><img
-                                        src="../../imagenes/mundo icono.png"
+                                        src="../../imagenes/mundo icono.webp"
                                         alt="Mundo Viajante">Turismo Sin
                                     Fronteras</a>
                                 <button class="navbar-toggler" type="button"
@@ -37,10 +37,24 @@
                             <div class="collapse navbar-collapse"
                                 id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link"
-                                            aria-current="page"
-                                            href="../../pages/destinos.html">Destinos</a>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link active dropdown-toggle"
+                                            href="../../pages/destinos.html"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                            onclick="toggleActiveClass(this)">
+                                            Destinos
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item"
+                                                    href="../../pages/subpages/ushuaia.html">Ushuaia</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="../../pages/subpages/iguazu.html">Puerto
+                                                    Iguazu</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="../../pages/subpages/cordoba.html">Cordoba</a></li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link"
@@ -93,21 +107,22 @@
                     <li class="img_iguazu"> <img class="img1"
                             src="../../imagenes/primera (1).webp" alt="cascadas"></li>
                     <li class="img_iguazu"> <img class="img1"
-                            src="../../imagenes/segunda.jpg" alt="cascadas"></li>
+                            src="../../imagenes/segunda.webp" alt="cascadas"></li>
                     </div>
                     <br>
             </section>
         </main>
         <!-- pie de pagina -->
         <footer class="footer"> <!-- Navegacion de footer-->
-            <nav class="footer footer-expand-lg bg-dark">
+            <nav class="footer footer-expand-lg">
                 <ul class="container-fluid">
                     <li class="redes1"><a href><img
-                                src="../../imagenes/ig3.png"
+                                src="../../imagenes/ig3.webp"
                                 alt="instagram"></a></li>
                     <li class="redes2"><a href><img
-                                src="../../imagenes/face3.png"
+                                src="../../imagenes/face3.webp"
                                 alt="facebook"></a></li>
+                    <li class="redes3"><a href=""><img src="../../imagenes/ws.png" alt="logo de whatsapp"></a></li>
                 </ul>
                 <div class="contacto2"><a href="../../pages/contacto.html">Contacto</a></div>
             </nav>

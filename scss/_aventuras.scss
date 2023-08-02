@@ -1,22 +1,78 @@
 /* AVENTURAS */
+.aventu_body{
+    /*background: linear-gradient(to bottom,gray,#5d9ec6);*/
+    background: linear-gradient(to bottom,gray,#5d9ec6);
+    color: rgb(247, 246, 246);
+    height: 100%;
+    main{
+        h1{
+            text-align: center;
+            background: map-get($fondo,terciario);
+        }
+        .margin_div{ 
+            display: grid;  
+            grid-template-columns: repeat(2,1fr);
+            place-items: center;
+            margin-top: 60px;
+            margin-bottom: 80px;
+            ol{
+                border-radius: 2%;
+                padding-right: 5px;
+                border: 2px solid black;
+            h2{
+                text-align: center;
+            }
+            .tex_aventuras{
+                text-align: justify;
+                /*padding-right: 30px;*/
+                padding-left: 0;
+            }
+        }
+        }
 
-.aventuras{
-    .aventuras_h1{
-        background-color: map-get($fondo,terciario);
-        margin: 0;
-        clip-path: inset(50%);
-        z-index: -1;
+        .iguazu_aventura{
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            margin-bottom: 80px;
+            ol{
+                border-radius: 2%;
+                padding-right: 5px;
+                border: 2px solid black;
+            h2{
+                text-align: center;
+            }
+            .tex_aventuras{
+                text-align: justify;
+                margin-right: 20px;
+            }
+        }
     }
-    .margin_div{
-        margin: -40px 0px 0px 0px;
+
+        .aven_cordo{  
+            display: grid;  
+            grid-template-columns: repeat(2,1fr);
+            place-items: center;
+            margin-bottom: 50px;
+            ol{
+                border-radius: 2%;
+                padding-right: 5px;
+                border: 2px solid black;
+            
+            h2{
+                text-align: center;
+            }
+            .tex_aventuras{
+                text-align: justify;
+                /*padding-right: 30px;*/
+                padding-left: 0;
+            }
+        }
     }
-    background-color:map-get($fondo,primario);
-    text-align: center;
-    color: map-get($fondo,secundario);
-    .tex_aventuras{
-        text-align: left;
-    }
+    }   
 }
+
 
 /* MOVIL AVENTURAS */
 @media (min-width:320px) and (max-width:576px){

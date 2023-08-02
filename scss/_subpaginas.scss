@@ -1,30 +1,36 @@
 /* USHUAIA */
-.ushuaia_style{
-    height: 100vh;
-    width: $full-width;
-    background-image: url(../imagenes/juan-pablo-mascanfroni-hNdDLuLgz-I-unsplash\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    div{
-        text-align: center;
-        color: map-get($fondo,secundario);
-    }
-    section{
-        ul{
+.body_ushuaia{
+    height: 100%;
+    main{
+        h1{
+            text-align: center;
+            margin-bottom: 20px;
+            color: map-get($fondo,secundario);
+            background: map-get($fondo,terciario);
+        }
+        section{
             display: flex;
-            justify-content: space-around;
-            list-style: none;
-            li{
-                img{
-                    animation-name: efectos;
-                    animation-iteration-count: 2;
-                    animation-timing-function: linear;
-                    animation-duration: 10s;
-                    @include medidas(400px,300px);
-                }
+            justify-content: center;
+            align-items: center;
+            div{
+                height: 400px;
+                width: 800px;
+                margin-top:0;
+                margin-bottom: 0;
             }
         }
+        p{
+            text-align: justify;
+            color: map-get($fondo,secundario);
+            width: 1000px;
+            margin-top: 20px;
+        }
+        aside{
+            .card-text{
+                color: black;
+            }
+        }
+
     }
 }
 
@@ -147,7 +153,7 @@
 .cordoba_style{
     height: $full-height;
     width: $full-width;
-    background-image: url(../../imagenes/rincon-cascada.jpg);
+    background-image: url(../imagenes/rincon-cascada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -184,7 +190,7 @@
     .cordoba_style{
         height: $full-height;
         width: $full-width;
-        background-image: url(../../imagenes/rincon-cascada.jpg);
+        background-image: url(../imagenes/rincon-cascada.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
