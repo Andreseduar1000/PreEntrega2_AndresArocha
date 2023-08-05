@@ -16,31 +16,24 @@
         color: white;
         margin-top: 30px;
         text-align: justify;
+        width: 500px;
         h2{
             text-align: center;
         }
-    }
-.redes{
-    width: 350px;
-    display: grid;
-    margin: auto;
-    place-items: center;
-    margin-top: 80px;
-    a{  
-        img{
-            width: 40px;
-            height: 40px;
+        div{
+            text-align: center;
+            .map{
+                margin-top: 30px;
+            }
         }
     }
-
-}
     section{
         grid-area: section;
     .formulario{
         margin: 20px;
         padding: 5px;
-        border: 2px solid ;
-        width:620px;
+        border: 2px solid;
+        width: 520px;
         background-color:transparent;
         border-radius: 2%;
         div{
@@ -48,7 +41,7 @@
                 color: white;
             }
             input{
-                width: 600px;
+                width: 500px;
                 height: 30px;
                 border:solid 1px;
                 border-color: black;
@@ -64,7 +57,7 @@
             color: white;
         }
         textarea{
-            width: 600px;
+            width: 500px;
             border: solid 1px;
             background-color: rgba(255, 255, 255, 0.975);
         }
@@ -80,18 +73,18 @@
             background:rgb(127, 204, 243,.5);
             font-size:16px;
             font-weight: 900;
-            margin-left: 180px;
+            margin-left: 140px;
             width: 250px;
             border-top-right-radius:10px;
             border-bottom-left-radius:10px;
-            transition:all 1s;
+            transition:all .5s;
             &:after,&:before{
                 content:" ";
                 width:10px;
                 height:10px;
                 position:absolute;
                 border :0px solid #fff;
-                transition:all 1s;
+                transition:all .5s;
                 }
             &:after{
                 top:-1px;
@@ -120,40 +113,255 @@
             }
         }
     }
-}
+} 
+
 
 /* Movil contacto */
 @media (min-width:320px) and (max-width:576px){
+body{
     .contacto{
-        margin: -3px 0px 4px 0px;
+        grid-template-areas: 
+        "h1"
+        "div "
+        "section";
+        width: auto;
+    
+    h1{
+        grid-area: h1;
+    }
+    section{
+        grid-area: section;
         padding: 0;
-        text-align: center;
-        height: 100vh;
-        width: $full-width;
-        background-image: url(../imagenes/pedro-monteiro-HfIex7qwTlI-unsplash\ \(1\).jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        h1{
-        background-color:map-get($fondo,primario);
-        color:map-get($fondo,secundario);
-        }
-        .formulario1{
-            height: 100vh;
-            color:map-get($fondo,secundario);
+        width: auto;
+        .formulario{
+            width: 300px;
+            
             div{
-                button{
-                cursor: pointer;
-                width: 80px;
-                background: linear-gradient(#2269ec,#1eadc6);
-                border: 1px solid;
-                color:map-get($fondo,secundario);
+                input{
+                    width: 285px;
+                    
+                }
+            }
+            textarea{
+                width: 285px;
+                
+            }
+            button{
+                width: 200px; 
+                margin-left: 40px;
             }
         }
-
+    }
+    .mensaje{
+        grid-area: div;
+        width: 380px;
+        .map{
+            iframe{
+                width: 350px;
+            }
         }
     }
-    
-
+}
+}
 }
 
+/* Movil contacto 320 a 400*/
+@media (min-width:320px) and (max-width:400px){
+    body{
+        .contacto{
+            grid-template-areas: 
+            "h1"
+            "div "
+            "section";
+            width: auto;
+            justify-items: center;
+        h1{
+            grid-area: h1;
+            width: 100%;
+        }
+        section{
+            grid-area: section;
+            padding:5px;
+            margin: 0;
+            margin-bottom: 20px;
+            width: auto;
+            place-items: center;
+            .formulario{
+                width: 280px;
+                margin: 0;
+                
+                div{
+                    input{
+                        width: 265px;
+                        
+                    }
+                }
+                textarea{
+                    width: 265px;
+                    
+                }
+                button{
+                    width: 200px; 
+                    margin-left: 30px;
+                }
+            }
+        }
+        .mensaje{
+            grid-area: div;
+            width: 300px;
+            margin: 0;
+            .map{
+                iframe{
+                    width: 280px;
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    }
+}
+/*Tablet de 576 a 740 */
+@media (min-width:576px) and (max-width:740px){
+    body{
+        .contacto{
+            grid-template-areas: 
+            "h1"
+            "div "
+            "section";
+            width: auto;
+        
+        h1{
+            grid-area: h1;
+        }
+        section{
+            grid-area: section;
+            padding: 0;
+            width: auto;
+            .formulario{
+                width: 500px;
+                
+                div{
+                    input{
+                        width: 480px;
+                        
+                    }
+                }
+                textarea{
+                    width: 480px;
+                    
+                }
+                button{
+                    width: 300px; 
+                    margin-left: 90px;
+                }
+            }
+        }
+        .mensaje{
+            grid-area: div;
+            width: 500px;
+            .map{
+                iframe{
+                    width: 400px;
+                }
+            }
+        }
+    }
+    }
+}
+/* tablet contacto */
+@media (min-width:740px) and (max-width:1000px){
+    body{
+        .contacto{
+            grid-template-areas: 
+            "h1"
+            "div section "
+            "div section";
+            width: auto;
+        
+        h1{
+            grid-area: h1;
+        }
+        section{
+            grid-area: section;
+            padding: 0;
+            width: auto;
+            .formulario{
+                width: 300px;
+                
+                div{
+                    input{
+                        width: 285px;
+                        
+                    }
+                }
+                textarea{
+                    width: 285px;
+                    
+                }
+                button{
+                    width: 200px; 
+                    margin-left: 40px;
+                }
+            }
+        }
+        .mensaje{
+            grid-area: div;
+            width: 380px;
+            .map{
+                iframe{
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+}
+/* tablet contacto */
+@media (min-width:1000px) and (max-width:1100px){
+    body{
+        .contacto{
+            grid-template-areas: 
+            "h1"
+            "div section "
+            "div section";
+            width: auto;
+        
+        h1{
+            grid-area: h1;
+        }
+        section{
+            grid-area: section;
+            padding: 0;
+            width: auto;
+            .formulario{
+                width: 400px;
+                
+                div{
+                    input{
+                        width: 385px;
+                        
+                    }
+                }
+                textarea{
+                    width: 385px;
+                    
+                }
+                button{
+                    width: 250px; 
+                    margin-left: 70px;
+                }
+            }
+        }
+        .mensaje{
+            grid-area: div;
+            width: 380px;
+            .map{
+                iframe{
+                    width: 350px;
+                }
+            }
+        }
+    }
+}
+}

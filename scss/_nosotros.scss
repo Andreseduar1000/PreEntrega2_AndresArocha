@@ -22,7 +22,8 @@ body{
     ;
     section{
         grid-area: section;
-
+        display: flex;
+        justify-content:center;
         div{
             height: 400px;
             width: 600px;
@@ -44,25 +45,78 @@ body{
 }
 }
 /* MOVIL NOSOTROS */
-@media (min-width:320px) and (max-width:576px){
+@media (min-width:340px) and (max-width:576px){
     .body_nosotros{
-    .text_nosotros{
-        display: grid;
-        grid-area:
-        "header"
-        "main"
-        "footer";
-        justify-content: center;
-        background-color:map-get($fondo,primario);
-        color: map-get($fondo,secundario);
-        height:$full-height;
-        width: f$full-width;
-        section{
-            img{
-                width: 320px;
-
+        .somos{
+            section{
+                height: 350px;
+                div{
+                    width: auto;
+                    padding: 2px;
+                    margin: 2px;
+                }
+            }
+            p{
+                width: auto;
+                padding: 4px;
+                margin: 4px;
+            }
+        }
+    }
+    
+}
+/*MOVIL 320 0 400*/
+@media(min-width:320px) and (max-width:400px)
+{
+    .body_nosotros{
+        .boton{
+            margin-bottom: 20px;
+            a{
+                font-size: 15px;
+                width: 30px;
+                img{
+                    width: 40px;
+                }
+            }
+        }
+        .somos{
+            section{
+                height: 350px;
+                div{
+                    width: auto;
+                    padding: 2px;
+                    margin: 2px;
+                }
+            }
+            p{
+                width: auto;
+                padding: 4px;
+                margin: 4px;
             }
         }
     }
 }
+/*Tablet Nosotros */
+
+/*TABLET*/
+@media (min-width:576px) and (max-width:991px)
+{
+    .body_nosotros{
+        .somos{
+            section{
+                div{
+                    width: 550px;
+                    padding: 2px;
+                    margin: 2px;
+                    height: 300px;
+                    margin-bottom: 50px;
+                }
+            }
+            p{
+                width: 550px;
+                padding: 4px;
+                margin: 4px;
+            }
+        }
+    }
 }
